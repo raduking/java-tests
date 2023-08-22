@@ -1,6 +1,6 @@
 import java.util.concurrent.TimeUnit;
 
-void main() {
+void main() throws Exception {
     String d = "";
     new Thread(() -> boring("boring!", d, 1)).start();
     new Thread(() -> boring("boring!", d, 2)).start();
