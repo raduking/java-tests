@@ -4,10 +4,10 @@ public class SimpleThreads {
 
 	public static void main(final String[] args) throws Exception {
 		String d = "";
-		new Thread(() -> boring("boring!", d, 1));
-		new Thread(() -> boring("boring!", d, 2));
-		new Thread(() -> boring("boring!", d, 3));
-		new Thread(() -> boring("boring!", d, 4));
+		new Thread(() -> boring("boring!", d, 1)).start();
+		new Thread(() -> boring("boring!", d, 2)).start();
+		new Thread(() -> boring("boring!", d, 3)).start();
+		new Thread(() -> boring("boring!", d, 4)).start();
 
 		TimeUnit.SECONDS.sleep(10);
 
