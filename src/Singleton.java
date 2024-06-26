@@ -1,6 +1,8 @@
 public class Singleton {
 
 	private Singleton() {
+		// this line will only execute when calling getInstance()
+		// and will not execute when calling getAuthor() or main()
 		System.out.println("Singleton instantiated!");
 	}
 
